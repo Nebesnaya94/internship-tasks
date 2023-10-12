@@ -3,8 +3,7 @@ extends ../../build_modules/common
 
 block body
     //Your code here
-    - let number = 0
     .spoilers
         h1.spoilers__title Текст-рыба
-        - for (let i=1; i<=5; i++)
-            +spoiler(number++)
+        - for (let i=0; i<=4; i++)
+            +spoiler(i)
